@@ -1,0 +1,239 @@
+    @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{/*adding background color for the whole page*/
+        background-color: #4dccbd;
+    }
+    
+    header{/*navbar*/
+        height: 80px;/*height of navbar*/
+        display: flex;/*making the navbar flex horizontally*/
+        justify-content: space-between;/*add space between items in the header*/
+        align-items: center;/*align items vertically in the center*/
+        background-color: #231651 ;/*background color of navbar*/
+        box-shadow: 0 7px 0 #070410;/*shadow of navbar*/
+    }.logo{/*add margin to the logo text */
+        margin-left: 16px;
+    }   
+    .logo a{/*adding color and styling the logo text*/
+        text-decoration: none;/*removing decoration*/
+        color: #EEF36a;/*text color*/
+        font-family: "Teko", sans-serif;/*font style*/
+        font-size: 3em;/*size of the textca*/
+    }
+
+    ul{
+        list-style: none;/*no list style*/
+    }
+    ul li{
+        display: inline-block;/*making the text in the line*/
+        padding: 0 25px;/*adding padding between each text*/
+    }
+    ul li a{
+        text-decoration: none;/*no deocartion*/
+        color: #FFFFFF;/*text color white*/
+        font-size: 15px;/*text size*/
+        font-family: "Lato", sans-serif;/*font style*/
+    }
+    main{
+        padding-top: 48px; /*adding space to the top*/
+        max-width: 900px;/*max width only for 900px*/
+        display: flex;/*flexing main*/
+        flex-wrap: wrap;/*wrapping the main containers*/
+        gap: 48px;/*adding space bewteen each containers*/
+        margin: 0 auto;/*centering main*/
+    }
+    .search a{/*search button*/
+        font-family: "Teko", sans-serif;/*font style*/
+        text-decoration: none;/*no decoration in text*/
+        color: #070410;  /*text color*/
+        border: #070410 2px solid;/*black border for the button*/
+        background-color: #EEF36a;  /*background color for button*/
+        align-items: center;/*vertially align text in the center*/
+        padding: 5px 20px;/*size of the button*/
+        font-size: 2em;/*text size*/
+        border-radius: 16px;  /*cruved border for button*/
+        margin-right: 16px;/*adding space to the right*/
+    }
+    .main_container{/*first container*/
+        border: #070410 2px solid; /*border for main container*/
+        width: 100%;    /*maximixing width to 100percent*/
+        overflow: hidden;/*overflowing text is hidden*/
+        background-color:#ffffff ;/*white background for container*/
+        box-shadow: 7px 5px;/*shadow of the container*/
+    }
+    .main_container img{
+        object-fit: cover;/*cover the whole image in container*/
+        height: 300px;
+        width: 100%;
+    }
+    .container_content{/*text of conatiner*/
+        margin: 16px; /*margin inside of the container*/
+        display: flex; 
+    }
+    .container_content a{/*watch now button*/
+        margin-top: auto;/*adding space on top*/
+        font-family: "Teko", sans-serif;
+        background-color: #EEF36a;  
+        text-decoration: none;
+        color: #070410;  
+        border: #070410 2px solid;
+        border-radius: 16px;  
+        display: flex;
+        padding: 16px 80px;
+        justify-content: center;
+        font-size: 2em;     
+        text-align: center;
+    }
+    .main_container p{
+        margin-right: 16px;/*adding space to the right to fit the button*/
+    }
+    .container_content p{
+        font-family: "Lato", sans-serif;
+        font-size: 1.5em;
+    }
+    .container_content h3{
+        font-size: 3em;
+    }
+    .movie_container1{/*vertical container*/
+        background-color: #ffffff;
+        width: 426px;
+        border: #070410 2px solid;
+        box-shadow: 7px 5px;
+        max-height: 100%;/*max height to fit the image and text*/
+    }
+    .movie_container1 img{
+        width: 100%;
+    }
+    .movie1{
+        flex-direction: column;/*making the text and button vertical*/
+    }
+    .movie1 p{
+        font-size: 1.5em;
+        padding-bottom: 16px;
+    }
+    .movie_container2{/*horizontal container*/
+        height: 426px;/*max height*/
+        display: flex;
+        background-color: #ffffff;
+        border: #070410 2px solid;
+        box-shadow: 7px 5px;
+    }
+    .movie_container2 img{
+        width: 426px;/*max width for image*/
+    }
+    .movie2{
+        flex-direction: column;
+    }
+    .movie2 p{
+        font-size: 1.5em;
+        padding-bottom: 16px;
+    }
+    footer{
+        margin-top: 48px;/*adding space on top of footer*/
+    }
+    .pad1{
+        padding-top: 1.9rem;/*adding padding on top for only pad1 button*/
+    }
+
+    @media screen and (min-width: 720px) and (max-width: 1024px) {/*tablet responsive codes*/
+        main{
+            max-width: 95%;/*chaging main width*/
+            gap: 32px;/*changing gap*/
+            justify-content: center;
+        }
+        .main_container{
+            background-color: #ffffff;
+            width: 308px;/*max width instead of 100%*/
+            border: #070410 2px solid;
+            box-shadow: 7px 5px;
+            max-height: 100%;/*max height instead of 300px*/
+        }
+        .main_container p {
+            margin-right: 0;/*removing right margin*/
+            padding-bottom: 16px;
+        }
+        .main_container .container_content{
+        flex-direction: column;/*making text and button vertical instead of horizontal*/
+        }
+        .movie_container1{
+            width: 308px;/*changing width*/
+        }
+        .movie_container2 {
+            display: block;/*block instead of flex*/
+            width: 308px;
+            height: auto;
+        }
+        .movie_container2 .container_content {
+            flex-direction: column;/*making text and button vertical instead of horizontal*/
+        }
+        .movie_container2 img {
+            width: 100%;
+        }
+        .pad1{
+            padding-top: 3.3rem;/*chaning for pad1 button only*/
+        }
+        .pad2{
+            padding-top: 7.2rem;/*changing for pad2 button only*/
+        }
+
+
+    }
+
+@media screen and (min-width: 360px) and (max-width: 719px){/*moble responsive does*/
+    header{
+        box-shadow: none;/*removing box shadow*/
+    }
+    header nav{
+        display: none;/*removing navbar*/
+    }
+    main{
+        padding-top: 16px;
+        max-width:100% ;/*using the whole widht of the page*/
+        margin: 0;/*removing the centering margin*/
+        display: block;/*block instead of flex*/
+    }
+    .main_container{
+        width: 100%;
+        box-shadow: none;/*removing box shadow*/
+        margin-bottom: 16px;
+    }
+    .main_container .container_content{
+        flex-direction: column;/*from horizontal to vertical*/
+        }
+    .main_container p {
+        margin-right: 0;/*removing space on right*/
+        padding-bottom: 16px;
+    }
+    .main_container img{
+        max-height: 100%;
+    }
+    .container_content a{
+        padding: 16px 50px;
+    }
+    .movie_container1{
+        margin-bottom: 16px;
+        width: 100%;
+        box-shadow: none;/*removing box shadow*/
+    }
+    .movie_container2 {
+        margin-bottom: 16px;
+        display: block;/*from flex to block*/
+        width: 100%;
+        height: auto;
+    }
+    .movie_container2 img{
+        width: 100%;
+    }
+    .movie_container2 .container_content {
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 0;/*removing margin from footer*/
+    }
+}
